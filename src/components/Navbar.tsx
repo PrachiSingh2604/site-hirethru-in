@@ -32,13 +32,14 @@ const Navbar = () => {
   return (
     <AppBar position="sticky" color="default" elevation={1}>
       <Toolbar sx={{ justifyContent: 'space-between' }}>
-        <Link to="/">
-          <Box
-            component="img"
-            src="/logo.png"
-            sx={{ height: 110, width: 'auto' }}
-          />
-        </Link>
+      <Link to="/">
+    <Box
+      component="img"
+      src={`${import.meta.env.BASE_URL}logo.png`}
+      sx={{ height: 110, width: 'auto' }}
+      alt="Logo"
+    />
+  </Link>
         <IconButton
           color="inherit"
           aria-label="open drawer"

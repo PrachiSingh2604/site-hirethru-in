@@ -77,14 +77,14 @@ const Home = () => {
       </Container>
 
       <Box sx={{ my: 8 }}>
-        <video
-          width="100%"
-          controls
-          style={{ maxWidth: '1200px', margin: '0 auto', display: 'block' }}
-        >
-          <source src="/intro.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <video
+  width="100%"
+  controls
+  style={{ maxWidth: '1200px', margin: '0 auto', display: 'block' }}
+>
+  <source src={`${import.meta.env.BASE_URL}intro.mp4`} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
       </Box>
     </Box>
   );

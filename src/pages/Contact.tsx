@@ -9,7 +9,7 @@ import {
   Paper,
 } from '@mui/material';
 import { motion } from 'framer-motion';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,16 +23,6 @@ const Contact = () => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     // Form submission logic would go here in a real application
-  };
-
-  const mapContainerStyle = {
-    width: '100%',
-    height: '400px',
-  };
-
-  const center = {
-    lat: 28.4595,
-    lng: 77.0266,
   };
 
   return (

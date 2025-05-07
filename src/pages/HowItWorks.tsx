@@ -1,7 +1,19 @@
 import { Box, Container, Typography, Grid, Paper, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
+import React from 'react';
 
-const steps = [
+interface Step {
+  title: string;
+  description: string;
+  image: string;
+}
+
+interface StepCardProps {
+  step: Step;
+  index: number;
+}
+
+const steps: Step[] = [
   {
     title: 'Recruitment Analysis',
     description:
@@ -28,7 +40,7 @@ const steps = [
   },
 ];
 
-const StepCard = ({ step, index }) => {
+const StepCard: React.FC<StepCardProps> = ({ step, index }) => {
   const isEven = index % 2 === 0;
 
   return (
@@ -108,7 +120,7 @@ const StepCard = ({ step, index }) => {
   );
 };
 
-const HowItWorks = () => {
+const HowItWorks: React.FC = () => {
   return (
     <Box sx={{ py: 10, backgroundColor: '#f0f8fb' }}>
       <Container>

@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Grid, Avatar, Paper } from '@mui/material';
+import { Box, Container, Typography, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import PersonIcon from '@mui/icons-material/Person';
 

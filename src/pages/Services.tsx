@@ -1,8 +1,28 @@
 import { Box, Container, Typography, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
-import { Business, People, Work, Assessment, Search, CheckCircle, Star, Group, Lock, TrendingUp } from '@mui/icons-material';
+import {
+  Business,
+  People,
+  Work,
+  Assessment,
+  Search,
+  CheckCircle,
+  Star,
+  Group,
+  Lock,
+  TrendingUp,
+} from '@mui/icons-material';
+import React from 'react';
+import type { ReactElement } from 'react';
 
-const clientServices = [
+interface Service {
+  icon: ReactElement;
+  title: string;
+  description: string;
+  delay?: number;
+}
+
+const clientServices: Service[] = [
   { icon: <Business fontSize="large" />, title: 'End-to-End Recruitment', description: 'From understanding your needs to onboarding the perfect hire.' },
   { icon: <Assessment fontSize="large" />, title: 'Technical Screening & Assessment', description: 'In-depth evaluations by experts to ensure skill match.' },
   { icon: <Work fontSize="large" />, title: 'Contractual & Permanent Staffing', description: 'Flexible hiring models tailored to your business needs.' },
@@ -11,7 +31,7 @@ const clientServices = [
   { icon: <Group fontSize="large" />, title: 'Dedicated Account Management', description: 'Personalized service for seamless coordination.' },
 ];
 
-const candidateServices = [
+const candidateServices: Service[] = [
   { icon: <People fontSize="large" />, title: 'Personalized Job Matching', description: 'We connect you to roles based on your skills & goals.' },
   { icon: <Assessment fontSize="large" />, title: 'Resume & Profile Optimization', description: 'Make your application shine to potential employers.' },
   { icon: <CheckCircle fontSize="large" />, title: 'Interview Preparation', description: 'Boost confidence with targeted interview guidance.' },
@@ -20,7 +40,7 @@ const candidateServices = [
   { icon: <TrendingUp fontSize="large" />, title: 'Career Growth Advisory', description: 'Navigate your journey with expert career support.' },
 ];
 
-const ServiceCard = ({ icon, title, description, delay = 0 }) => (
+const ServiceCard: React.FC<Service> = ({ icon, title, description, delay = 0 }) => (
   <motion.div
     whileHover={{ scale: 1.05, rotate: 1 }}
     initial={{ opacity: 0, y: 30 }}
@@ -49,7 +69,7 @@ const ServiceCard = ({ icon, title, description, delay = 0 }) => (
   </motion.div>
 );
 
-const Services = () => {
+const Services: React.FC = () => {
   return (
     <Box sx={{ py: 10, backgroundColor: '#f4f9fb' }}>
       <Container>

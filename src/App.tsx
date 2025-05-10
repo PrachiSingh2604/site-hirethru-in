@@ -9,6 +9,7 @@ import HowItWorks from './pages/HowItWorks';
 import Testimonials from './pages/Testimonials';
 import Roles from './pages/Roles';
 import Contact from './pages/Contact';
+import {Box} from '@mui/material';
 
 const theme = createTheme({
   palette: {
@@ -32,6 +33,17 @@ const theme = createTheme({
 
 function App() {
   return (
+    <Box
+  sx={{ 
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    maxWidth: '100vw',
+    overflowX: 'hidden',
+    px: 2
+  }}
+>
+
     <ThemeProvider theme={theme}>
       <Router basename="/site-hirethru-in/">
         <Navbar />
@@ -47,7 +59,9 @@ function App() {
         </Routes>
       </Router>
     </ThemeProvider>
+    </Box>
   );
 }
+
 
 export default App;

@@ -45,7 +45,7 @@ function App() {
 >
 
     <ThemeProvider theme={theme}>
-      <Router basename="/site-hirethru-in/">
+    <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

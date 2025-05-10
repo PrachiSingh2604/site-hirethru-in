@@ -33,7 +33,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename="/site-hirethru-in/">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

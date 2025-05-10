@@ -9,7 +9,6 @@ import HowItWorks from './pages/HowItWorks';
 import Testimonials from './pages/Testimonials';
 import Roles from './pages/Roles';
 import Contact from './pages/Contact';
-import {Box} from '@mui/material';
 
 const theme = createTheme({
   palette: {

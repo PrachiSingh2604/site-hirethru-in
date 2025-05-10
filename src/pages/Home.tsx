@@ -9,7 +9,8 @@ const stats = [
 
 const Home = () => {
   return (
-    <Box>
+    <Box sx={{ overflowX: 'hidden' }}>
+      {/* Hero Section */}
       <Box
         sx={{
           background: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg)',
@@ -46,6 +47,7 @@ const Home = () => {
         </Container>
       </Box>
 
+      {/* Stats Section */}
       <Container sx={{ my: 8 }}>
         <Grid container spacing={4}>
           {stats.map((stat, index) => (
@@ -76,16 +78,17 @@ const Home = () => {
         </Grid>
       </Container>
 
-      <Box sx={{ my: 8 }}>
-      <video
-  width="100%"
-  controls
-  style={{ maxWidth: '1200px', margin: '0 auto', display: 'block' }}
->
-  <source src={`${import.meta.env.BASE_URL}intro.mp4`} type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-      </Box>
+      {/* Video Section */}
+      <Container sx={{ my: 8 }}>
+        <video
+          width="100%"
+          controls
+          style={{ display: 'block' }}
+        >
+          <source src={`${import.meta.env.BASE_URL}intro.mp4`} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </Container>
     </Box>
   );
 };

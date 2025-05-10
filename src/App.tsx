@@ -33,17 +33,6 @@ const theme = createTheme({
 
 function App() {
   return (
-    <Box
-  sx={{ 
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    maxWidth: '100vw',
-    overflowX: 'hidden',
-    px: 2
-  }}
->
-
     <ThemeProvider theme={theme}>
     <Router>
         <Navbar />
@@ -59,7 +48,6 @@ function App() {
         </Routes>
       </Router>
     </ThemeProvider>
-    </Box>
   );
 }
 

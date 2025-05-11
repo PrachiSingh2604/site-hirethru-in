@@ -2,9 +2,9 @@ import { Box, Container, Typography, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { label: 'Successful Placements', value: '500+' },
-  { label: 'Client Satisfaction', value: '98%' },
-  { label: 'Partner Companies', value: '50+' },
+  { label: 'CV Turnaround', value: '48 hours' },
+  { label: 'Offer To Join Ratio', value: '90%' },
+  { label: 'First Year Retention', value: '85%' },
 ];
 
 const Home = () => {
@@ -31,7 +31,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            Connecting IT Talent with Leading Organizations
+            Connecting Talent with Leading Organizations
           </Typography>
           <Typography
             variant="h5"
@@ -41,8 +41,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Your trusted partner in IT recruitment.
-            We help companies find & hire the best tech professionals efficiently.
+            We are a progressive and trusted recruitment firm specializing in the technology sector, dedicated to connecting outstanding tech professionals with innovative, forward-thinking companies. For us, recruitment is more than just filling positions — it’s about empowering talent and building lasting partnerships for the future.
           </Typography>
         </Container>
       </Box>

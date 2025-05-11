@@ -34,7 +34,7 @@ const About = () => {
             About Us
           </Typography>
           <Typography variant="h6" sx={{ maxWidth: '800px', color: 'gray', mb: 6 }}>
-            We are a specialized IT recruitment firm passionate about connecting high-caliber tech professionals with forward-thinking companies. At our core, we believe that hiring is not just about filling a role — it's about building futures.
+          We are a progressive and trusted recruitment firm specializing in the IT/technology sector, dedicated to connecting outstanding tech professionals with innovative, forward-thinking companies. For us, recruitment is more than just filling positions — it’s about empowering talent and building lasting partnerships for the future.
           </Typography>
         </motion.div>
 
@@ -52,7 +52,7 @@ const About = () => {
                   Our Mission
                 </Typography>
                 <Typography>
-                  To bridge the gap between outstanding IT talent and the organizations that need them by leveraging technology, human insight, and a relentless pursuit of excellence.
+                Our mission is to bridge the gap between exceptional talent — across both IT and non-IT domains — and the organizations that need them, by leveraging advanced technology, human insight, and an unwavering commitment to excellence.
                 </Typography>
               </Paper>
             </motion.div>
@@ -70,56 +70,13 @@ const About = () => {
                   Our Vision
                 </Typography>
                 <Typography>
-                  To be the most trusted IT recruitment partner globally, known for shaping careers and scaling businesses through talent.
+                To become a global catalyst for growth by transforming how organizations discover talent and how individuals discover purpose — using advanced analytics to ensure every hire drives impact, innovation, and long-term success.
                 </Typography>
               </Paper>
             </motion.div>
           </Grid>
         </Grid>
 
-        {/* Section: Core Values */}
-        <Box sx={{ mb: 10 }}>
-          <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold' }}>
-            Our Core Values
-          </Typography>
-          <Grid container spacing={4}>
-            {values.map((val, index) => (
-              <Grid item xs={12} md={4} key={val.title}>
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <Paper
-                    elevation={5}
-                    sx={{
-                      p: 4,
-                      textAlign: 'center',
-                      borderRadius: 4,
-                      background: 'linear-gradient(145deg, #004D6E 20%, #00A3E0 80%)',
-                      color: 'white',
-                      transform: 'scale(1)',
-                      '&:hover': {
-                        transform: 'scale(1.05)',
-                      },
-                    }}
-                  >
-                    <Avatar
-                      src={val.icon}
-                      alt={val.title}
-                      sx={{ width: 60, height: 60, mb: 2, mx: 'auto' }}
-                    />
-                    <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
-                      {val.title}
-                    </Typography>
-                    <Typography variant="body2">{val.description}</Typography>
-                  </Paper>
-                </motion.div>
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
 
         {/* Section: Why Us */}
         <Box sx={{ mb: 6 }}>

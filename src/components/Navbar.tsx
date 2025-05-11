@@ -25,7 +25,8 @@ const Navbar = () => {
     { text: 'How It Works', path: '/how-it-works' },
     { text: 'Our Services', path: '/services' },
     { text: 'Why Choose Us', path: '/why-choose-us' },
-    { text: 'Testimonials', path: '/testimonials' },
+    // { text: 'Testimonials', path: '/testimonials' },
+    { text: 'Core Values', path: '/core-values' },
     { text: 'Contact', path: '/contact' },
   ];
 

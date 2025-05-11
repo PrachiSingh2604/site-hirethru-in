@@ -5,7 +5,7 @@ const features = [
   {
     title: 'Industry Expertise',
     description:
-      'We specialize solely in IT recruitment. Our in-depth understanding of technology roles, stacks, and trends enables us to find not just qualified candidates — but the right ones.',
+      'We are a recruitment firm specializing in IT recruitment, dedicated to connecting top tech talent with leading organizations.',
   },
   {
     title: 'Customized Hiring Approach',

@@ -10,6 +10,7 @@ import Testimonials from './pages/Testimonials';
 import Roles from './pages/Roles';
 import Contact from './pages/Contact';
 import {Box} from '@mui/material';
+import CoreValues from './pages/CoreValues';
 
 const theme = createTheme({
   palette: {
@@ -44,6 +45,7 @@ function App() {
             <Route path="/why-choose-us" element={<WhyChooseUs />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/core-values" element={<CoreValues />} />
             <Route path="/roles" element={<Roles />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

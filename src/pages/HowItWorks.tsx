@@ -30,7 +30,7 @@ const steps: Step[] = [
     title: 'Technical Assessment',
     description:
       'Our technical specialists rigorously evaluate candidates’ skills and experience to ensure they meet the role’s requirements.',
-    image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
+    image: 'https://images.pexels.com/photos/5882587/pexels-photo-5882587.jpeg',
   },
   {
     title: 'Presentation and Selection',

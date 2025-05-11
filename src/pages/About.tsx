@@ -1,23 +1,6 @@
-import { Box, Container, Typography, Grid, Paper, Avatar } from '@mui/material';
+import { Box, Container, Typography, Grid, Paper} from '@mui/material';
 import { motion } from 'framer-motion';
 
-const values = [
-  {
-    title: 'Integrity',
-    description: 'We operate with complete transparency and honesty, always putting people first.',
-    icon: 'https://img.icons8.com/color/96/lock--v1.png',
-  },
-  {
-    title: 'Innovation',
-    description: 'We stay ahead of recruitment trends using AI tools and data-driven strategies.',
-    icon: 'https://img.icons8.com/color/96/artificial-intelligence.png',
-  },
-  {
-    title: 'Partnership',
-    description: 'We build long-term relationships based on mutual respect and success.',
-    icon: 'https://img.icons8.com/color/96/handshake.png',
-  },
-];
 
 const About = () => {
   return (

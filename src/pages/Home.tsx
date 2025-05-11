@@ -41,7 +41,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            We are a progressive and trusted recruitment firm specializing in the technology sector, dedicated to connecting outstanding tech professionals with innovative, forward-thinking companies. For us, recruitment is more than just filling positions — it’s about empowering talent and building lasting partnerships for the future.
+            We are a progressive and trusted recruitment firm specialized in connecting exceptional talent with forward-thinking companies and building lasting partnerships.
           </Typography>
         </Container>
       </Box>

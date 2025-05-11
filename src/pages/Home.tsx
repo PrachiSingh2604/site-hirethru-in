@@ -23,7 +23,7 @@ const Home = () => {
       >
         <Container>
           <Typography
-            variant="h1"
+            variant="h2"
             color="white"
             gutterBottom
             component={motion.h1}

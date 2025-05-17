@@ -14,6 +14,7 @@ import {
 } from '@mui/icons-material';
 import React from 'react';
 import type { ReactElement } from 'react';
+import Footer from './Footer';
 
 interface Service {
   icon: ReactElement;
@@ -95,6 +96,7 @@ const Services: React.FC = () => {
           ))}
         </Grid>
       </Container>
+      <Footer />
     </Box>
   );
 };

@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
+import Footer from './Footer';
 
 const features = [
   {
@@ -98,6 +99,7 @@ const WhyChooseUs = () => {
           </motion.div>
         </Box>
       </Container>
+      <Footer />
     </Box>
   );
 };

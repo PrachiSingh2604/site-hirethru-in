@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
+import Footer from './Footer';
 
 const stats = [
   { label: 'CV Turnaround', value: '48 hours' },
@@ -79,15 +80,14 @@ const Home = () => {
 
       {/* Video Section */}
       <Container sx={{ my: 8 }}>
-        <video
-          width="100%"
-          controls
-          style={{ display: 'block' }}
-        >
+        <video width="100%" controls style={{ display: 'block' }}>
           <source src={`${import.meta.env.BASE_URL}intro.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </Container>
+
+      {/* Footer Section */}
+      <Footer />
     </Box>
   );
 };

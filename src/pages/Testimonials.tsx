@@ -1,6 +1,7 @@
 import { Box, Container, Typography, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import PersonIcon from '@mui/icons-material/Person';
+import Footer from './Footer';
 
 const testimonials = [
   {
@@ -101,6 +102,7 @@ const Testimonials = () => {
           ))}
         </Grid>
       </Container>
+      <Footer />
     </Box>
   );
 };

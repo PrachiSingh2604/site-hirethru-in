@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Grid, Paper} from '@mui/material';
 import { motion } from 'framer-motion';
+import Footer from './Footer';
 
 
 const About = () => {
@@ -71,6 +72,7 @@ const About = () => {
           </Typography>
         </Box>
       </Container>
+      <Footer />
     </Box>
   );
 };

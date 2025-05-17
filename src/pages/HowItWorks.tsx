@@ -1,6 +1,7 @@
 import { Box, Container, Typography, Grid, Paper, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
 import React from 'react';
+import Footer from './Footer';
 
 interface Step {
   title: string;
@@ -135,6 +136,7 @@ const HowItWorks: React.FC = () => {
           <StepCard step={step} index={index} key={index} />
         ))}
       </Container>
+      <Footer />
     </Box>
   );
 };

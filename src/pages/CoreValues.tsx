@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Grid, Paper, Avatar } from '@mui/material';
 import { motion } from 'framer-motion';
+import Footer from './Footer';
 
 const values = [
   {
@@ -87,6 +88,7 @@ const CoreValues = () => {
           </Grid>
         </Box>     
       </Container>
+      <Footer />
     </Box>
   );
 };

@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import { motion } from 'framer-motion';
+import Footer from './Footer';
 
 const roles = [
   {
@@ -135,6 +136,7 @@ const Roles = () => {
           ))}
         </Grid>
       </Container>
+      <Footer />
     </Box>
   );
 };

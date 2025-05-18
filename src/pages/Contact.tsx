@@ -25,6 +25,14 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    const { name, email, phone, message } = formData;
+
+  // Manual validation
+  if (!name || !email || !phone || !message) {
+    alert("Please fill out all fields before submitting.");
+    return;
+  }
+
     if (!formRef.current) return;
 
     emailjs

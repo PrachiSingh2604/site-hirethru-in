@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <>
             <Helmet>
-                <title>Contact Us - HireThru Consultancy</title>
+                <title>HireThru</title>
                 <meta
                     name="description"
                     content="Get in touch with HireThru Consultancy. Contact us via phone or email, or visit our head office in Gurugram, Haryana. Find our location on the map."

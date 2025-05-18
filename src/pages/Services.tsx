@@ -15,6 +15,7 @@ import {
 import React from 'react';
 import type { ReactElement } from 'react';
 import Footer from './Footer';
+import { Helmet } from 'react-helmet-async';
 
 interface Service {
   icon: ReactElement;
@@ -73,6 +74,15 @@ const ServiceCard: React.FC<Service> = ({ icon, title, description, delay = 0 })
 const Services: React.FC = () => {
   return (
     <Box sx={{ py: 10, backgroundColor: '#f4f9fb' }}>
+      <Helmet>
+        <title>Our Services | HireThru Consultancy</title>
+        <meta
+          name="description"
+          content="Explore tailored recruitment services for both clients and candidates at HireThru Consultancy. From end-to-end hiring to personalized job matching, we cover it all."
+        />
+        <meta name="keywords" content="HireThru services, client hiring solutions, candidate services, IT recruitment, staffing, job matching" />
+      </Helmet>
+
       <Container>
         <Typography variant="h4" gutterBottom>
           💼 Services for Clients

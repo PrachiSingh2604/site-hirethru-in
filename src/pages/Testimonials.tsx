@@ -1,6 +1,7 @@
 import { Box, Container, Typography, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import PersonIcon from '@mui/icons-material/Person';
+import { Helmet } from 'react-helmet';
 import Footer from './Footer';
 
 const testimonials = [
@@ -37,6 +38,11 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <Box sx={{ py: 10, backgroundColor: '#f9f9f9' }}>
+      <Helmet>
+        <title>Testimonials | HireThru Consultancy</title>
+        <meta name="description" content="See what clients say about their successful hiring experience with HireThru Consultancy." />
+      </Helmet>
+
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 40 }}

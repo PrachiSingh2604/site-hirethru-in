@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import Footer from './Footer';
 
 const roles = [
@@ -44,6 +45,11 @@ const analytics = [
 const Roles = () => {
   return (
     <Box>
+      <Helmet>
+        <title>In-Demand Tech Roles | HireThru Consultancy</title>
+        <meta name="description" content="Explore high-demand IT roles, required tech stacks, and industry growth. Stay ahead with HireThru Consultancy." />
+      </Helmet>
+
       <Box
         sx={{
           background: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg)',

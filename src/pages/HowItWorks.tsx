@@ -1,6 +1,7 @@
 import { Box, Container, Typography, Grid, Paper, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Footer from './Footer';
 
 interface Step {
@@ -123,21 +124,31 @@ const StepCard: React.FC<StepCardProps> = ({ step, index }) => {
 
 const HowItWorks: React.FC = () => {
   return (
-    <Box sx={{ py: 10, backgroundColor: '#f0f8fb' }}>
-      <Container>
-        <Typography variant="h3" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
-          How It Works
-        </Typography>
-        <Typography variant="h6" sx={{ mb: 8, color: 'gray' }}>
-          Our Proven Recruitment Process: A structured approach to find the perfect match between talented IT professionals and organizational needs.
-        </Typography>
+    <>
+      <Helmet>
+        <title>How It Works - HireThru Consultancy</title>
+        <meta
+          name="description"
+          content="Discover the step-by-step process HireThru Consultancy follows to connect top IT talent with the right organizations — from recruitment analysis to candidate selection."
+        />
+      </Helmet>
 
-        {steps.map((step, index) => (
-          <StepCard step={step} index={index} key={index} />
-        ))}
-      </Container>
-      <Footer />
-    </Box>
+      <Box sx={{ py: 10, backgroundColor: '#f0f8fb' }}>
+        <Container>
+          <Typography variant="h3" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
+            How It Works
+          </Typography>
+          <Typography variant="h6" sx={{ mb: 8, color: 'gray' }}>
+            Our Proven Recruitment Process: A structured approach to find the perfect match between talented IT professionals and organizational needs.
+          </Typography>
+
+          {steps.map((step, index) => (
+            <StepCard step={step} index={index} key={index} />
+          ))}
+        </Container>
+        <Footer />
+      </Box>
+    </>
   );
 };
 

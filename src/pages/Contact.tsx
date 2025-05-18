@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import {
   Container,
   Grid,
@@ -10,6 +10,7 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,10 +20,34 @@ const Contact = () => {
     message: '',
   });
 
+  const formRef = useRef<HTMLFormElement>(null);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Form submission logic would go here in a real application
+
+    if (!formRef.current) return;
+
+    emailjs
+      .sendForm(
+        'service_sqddlkm',   // 🔁 Replace with your EmailJS service ID
+        'template_53fnmu3',  // 🔁 Replace with your EmailJS template ID
+        formRef.current,
+        '7ruewttHrSezbdGnK'    // 🔁 Replace with your EmailJS public key
+      )
+      .then(
+        () => {
+          alert('Message sent successfully!');
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+          });
+        },
+        (error) => {
+          alert('Failed to send message: ' + error.text);
+        }
+      );
   };
 
   return (
@@ -46,10 +71,16 @@ const Contact = () => {
               <Typography variant="h2" gutterBottom>
                 Get in Touch
               </Typography>
-              <Box component="form" onSubmit={handleSubmit}>
+              <Box
+                component="form"
+                ref={formRef}
+                onSubmit={handleSubmit}
+                noValidate
+              >
                 <TextField
                   fullWidth
                   label="Name"
+                  name="name"
                   margin="normal"
                   required
                   value={formData.name}
@@ -60,6 +91,7 @@ const Contact = () => {
                 <TextField
                   fullWidth
                   label="Email"
+                  name="email"
                   margin="normal"
                   required
                   type="email"
@@ -71,6 +103,7 @@ const Contact = () => {
                 <TextField
                   fullWidth
                   label="Phone"
+                  name="phone"
                   margin="normal"
                   required
                   value={formData.phone}
@@ -81,6 +114,7 @@ const Contact = () => {
                 <TextField
                   fullWidth
                   label="Message"
+                  name="message"
                   margin="normal"
                   required
                   multiline

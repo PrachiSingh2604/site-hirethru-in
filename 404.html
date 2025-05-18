@@ -2,24 +2,9 @@
 <html>
   <head>
     <script>
-      (function () {
-        const allowedPaths = [
-          "/",
-          "/about",
-          "/roles",
-          "/how-it-works",
-          "/services",
-          "/core-values",
-          "/contact"
-        ];
-
-        const baseUrl = "https://site.hirethru.in";
-        const currentPath = window.location.pathname;
-
-        if (!allowedPaths.includes(currentPath)) {
-          window.location.href = baseUrl;
-        }
-      })();
+      if (window.location.href !== "https://site.hirethru.in/") {
+        window.location.href = "https://site.hirethru.in/";
+      }
     </script>
   </head>
   <body>

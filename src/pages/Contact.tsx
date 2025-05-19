@@ -155,9 +155,9 @@ const Contact = () => {
                 <Typography variant="h4" gutterBottom>
                   Contact Information
                 </Typography>
-                <Typography paragraph>
+                {/* <Typography paragraph>
                   Phone: +91 8860509145, 9819616197
-                </Typography>
+                </Typography> */}
                 <Typography paragraph>
                   Email: client.connect@hirethru.in, Enquiry@hirethru.in
                 </Typography>

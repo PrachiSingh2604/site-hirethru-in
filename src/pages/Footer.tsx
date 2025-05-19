@@ -19,7 +19,7 @@ const Footer = () => {
                             <Typography variant="h5" gutterBottom>
                                 Contact Information
                             </Typography>
-                            <Typography>Phone: +91 8860509145, 9819616197</Typography>
+                            {/* <Typography>Phone: +91 8860509145, 9819616197</Typography> */}
                             <Typography>Email: client.connect@hirethru.in, Enquiry@hirethru.in</Typography>
                             <Typography>
                                 Website:{" "}

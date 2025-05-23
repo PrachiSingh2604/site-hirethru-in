@@ -159,7 +159,7 @@ const Contact = () => {
                   Phone: +91 8860509145, 9819616197
                 </Typography> */}
                 <Typography paragraph>
-                  Email: client.connect@hirethru.in, Enquiry@hirethru.in
+                  Email: Enquiry@hirethru.in
                 </Typography>
                 <Typography paragraph>
                   Website: http://site.hirethru.in/

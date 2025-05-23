@@ -27,7 +27,7 @@ const Navbar = () => {
     // { text: 'Why Choose Us', path: '/why-choose-us' },
     // { text: 'Testimonials', path: '/testimonials' },
     { text: 'Core Values', path: '/core-values' },
-    { text: 'Contact', path: '/contact' },
+    { text: 'Contact Us', path: '/contact' },
   ];
 
   return (

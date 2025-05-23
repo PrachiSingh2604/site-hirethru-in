@@ -20,7 +20,7 @@ const Footer = () => {
                                 Contact Information
                             </Typography>
                             {/* <Typography>Phone: +91 8860509145, 9819616197</Typography> */}
-                            <Typography>Email: client.connect@hirethru.in, Enquiry@hirethru.in</Typography>
+                            <Typography>Email: Enquiry@hirethru.in</Typography>
                             <Typography>
                                 Website:{" "}
                                 <a
@@ -48,7 +48,7 @@ const Footer = () => {
                     </Grid>
                     <Divider sx={{ my: 4, borderColor: 'rgba(255, 255, 255, 0.2)' }} />
                     <Typography variant="body2" align="center" sx={{ color: 'gray' }}>
-                        © {new Date().getFullYear()} HireThru Consultancy. All rights reserved.
+                        © 2024 HireThru Consultancy. All rights reserved.
                     </Typography>
                 </Container>
             </Box>
